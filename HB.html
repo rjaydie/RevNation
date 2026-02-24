@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevNation</title>
+    <style>
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 70px;
+            background: var(--white);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        }
+
+        .nav h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a{
+            margin-left: 28px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0%;
+            height: 1px;
+            background: var(--accent);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+
+        }
+
+        .projects {
+            background: var(--white);
+         }
+
+         .project-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+         }
+
+         .project-item {
+            overflow: hidden;
+            border-radius: 4px;
+         }
+
+         .project-item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+         }
+
+         .project-item:hover {
+            transform: scale(1.08);
+         }
+
+         /* ========== COMMON TITLES ========= */
+        .section-tag {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .section-tag.center {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 5000;
+            margin-bottom: 50px;
+        }
+
+         /* ========== FOOTER ========= */
+        .footer {
+            text-align: center;
+            padding: 35px;
+            background: black;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-left">
+            <h2>RevNation</h2>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="">Projects</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+    </header>
+
+    <section class="Projects" id="Projects">
+        <span class="section-tag center">RevNation</span>
+        <h2 class="section-title">HATCHBACK Cars</h2>
+
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="Pics/hb1.webp" alt="Project" loading="lazy">
+            </div>
+
+            <div class="project-item">
+                <img src="Pics/hb2.avif" alt="Project" loading="lazy">
+            </div>
+
+            <div class="project-item">
+                <img src="Pics/hb3.avif" alt="Project" loading="lazy">
+            </div>
+
+            <div class="project-item">
+                <img src="Pics/hb4.avif" alt="Project" loading="lazy">
+            </div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="Pics/hb5.avif" alt="Project" loading="lazy">
+            </div>
+
+            <div class="project-item">
+                <img src="Pics/hb6.jpg" alt="Project" loading="lazy">
+            </div>
+
+            <div class="project-item">
+                <img src="Pics/hb7.avif" alt="Project" loading="lazy">
+            </div>
+
+            <div class="project-item">
+                <img src="Pics/hb8.avif " alt="Project" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Lanzaderas RJB. Web developer</p>
+    </footer>
+</body>
+</html>
